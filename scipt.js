@@ -54,11 +54,13 @@ submitBook.addEventListener("click", () => {
     books.removeChild(div);
   });
 
-  redButton.addEventListener("click", () => {
+  redButton.addEventListener("click", (e) => {
+    console.log(e)
     redButton.classList.toggle("readBook");
   });
 
   title.value = "";
   author.value = "";
   pages.value = "";
+  return false;
 });
