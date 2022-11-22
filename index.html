@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scipt.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a6ac6179b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Add book -->
+
+    <div class="addMenu">
+      <h3>Add new book</h3>
+      <form class="inputs">
+        <input
+          type="text"
+          placeholder="Title"
+          class="title input-info"
+          value=""
+          required
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          class="author input-info"
+          value=""
+          required
+        />
+        <input
+          type="number"
+          placeholder="Pages"
+          class="pages input-info"
+          value=""
+          required
+        />
+        <div class="checkform">
+          <label for="read">Have you read it?</label>
+          <input type="checkbox" id="read" />
+        </div>
+        <button class="submitBook" onclick="return false;">Add</button>
+      </form>
+    </div>
+    <main>
+      <header>
+        <h1>Library App</h1>
+        <p class="description">Add your books</p>
+      </header>
+      <div class="container">
+        <button class="addButton">+ Add book</button>
+        <div class="books"></div>
+      </div>
+      <footer>
+        Copyright © 2022 egorlagunovich
+        <a href="https://github.com/egorlagunovich"
+          ><i class="fab fa-github" aria-hidden="true"></i
+        ></a>
+      </footer>
+    </main>
+  </body>
+</html>
